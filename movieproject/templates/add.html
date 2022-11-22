@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  <input type="text" name="name" placeholder="enter name">
+  <input type="text" name="desc" placeholder="enter description">
+  <input type="number" name="year" placeholder="enter year">
+  <input type="file" name="img" >
+  <input type="submit">
+</form>
+
+</body>
+</html>
